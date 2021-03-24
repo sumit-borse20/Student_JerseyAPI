@@ -1,0 +1,25 @@
+//Create Database.
+
+mysql> create database student_data;
+Query OK, 1 row affected (0.05 sec)
+
+//Use Database
+mysql> use student_data;
+Database changed
+
+//Create Table Student
+mysql> create table student(student_no int(3),student_name varchar(30),student_dob date,student_doj date);
+Query OK, 0 rows affected (0.16 sec)
+
+//Describe table.
+mysql> describe student;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| student_no   | int(3)      | YES  |     | NULL    |       |
+| student_name | varchar(30) | YES  |     | NULL    |       |
+| student_dob  | date        | YES  |     | NULL    |       |
+| student_doj  | date        | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+4 rows in set (0.09 sec)
+
